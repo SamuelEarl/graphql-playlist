@@ -1,0 +1,45 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
+    "@craco/craco": "^5.6.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "apollo-boost": "^0.4.9",
+    "graphql": "^15.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "__SCRIPTS_COMMENT__": "Look in the 'craco.config.js' file for comments about overriding the Create React App configs to add Webpack aliasing.",
+    "start": "BROWSER=none craco start",
+    "__start__": "BROWSER=none react-scripts start",
+    "build": "craco build",
+    "__build__": "react-scripts build",
+    "test": "craco test",
+    "__test__": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "craco-alias": "^2.1.1"
+  }
+}
