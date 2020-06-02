@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
-import { GET_BOOK_QUERY } from '@/queries/queries';
+import { GET_BOOK_QUERY } from '@/api/api';
 
 function BookDetails(props) {
   const { loading, error, data } = useQuery(GET_BOOK_QUERY, {
