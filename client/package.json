@@ -14,6 +14,9 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
+  "devDependencies": {
+    "craco-alias": "^2.1.1"
+  },
   "scripts": {
     "__SCRIPTS_COMMENT__": "Look in the 'craco.config.js' file for comments about overriding the Create React App configs to add Webpack aliasing.",
     "start": "BROWSER=none craco start",
@@ -38,8 +41,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "craco-alias": "^2.1.1"
   }
 }
