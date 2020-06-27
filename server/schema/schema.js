@@ -37,7 +37,7 @@ const BookType = new GraphQLObjectType({
     genre: { type: GraphQLString },
     // This is a type relation - how you relate one type with another type. See tutorial #13.
     author: {
-      type: AuthorType,
+      type: AuthorType, // By specifying `type: AuthorType`, I think this means that this field is going return some data (an object in this case) that follows the data structure that is specified in the `AuthorType` type definition, but the resolver describes how the data are retrieved.
       resolve(parent, args) {
         // Resolve function code for dummy data:
         // return _.find(authors, { id: parent.authorId });
@@ -81,7 +81,7 @@ const RootQuery = new GraphQLObjectType({
       }
     },
     book: {
-      type: BookType,
+      type: BookType, // By specifying `type: BookType`, I think this means that this field is going return some data (an object in this case) that follows the data structure that is specified in the `BookType` type definition, but the resolver describes how the data are retrieved.
       args: { id: { type: GraphQLID }},
       resolve(parent, args) {
         // Resolve function code for dummy data:
@@ -117,7 +117,7 @@ const Mutation = new GraphQLObjectType({
   name: 'Mutation',
   fields: {
     addAuthor: {
-      type: AuthorType,
+      type: AuthorType, // By specifying `type: AuthorType`, I think this means that this field is going create some data (an object in this case) that follows the data structure that is specified in the `AuthorType` type definition, but the resolver describes how the data are created.
       args: {
         name: { type: new GraphQLNonNull(GraphQLString) },
         age: { type: new GraphQLNonNull(GraphQLInt) },

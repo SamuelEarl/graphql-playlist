@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useQuery } from '@apollo/react-hooks';
-import { GET_BOOKS_QUERY } from '@/api/api';
+import { GET_BOOKS_QUERY } from '@/graphql/api';
 import BookDetails from '@/components/BookDetails';
 
 function BookList() {
